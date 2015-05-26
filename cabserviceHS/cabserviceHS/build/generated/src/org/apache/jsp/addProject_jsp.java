@@ -52,9 +52,7 @@ public final class addProject_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <meta charset=\"utf-8\">\r\n");
       out.write("    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n");
       out.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
-      out.write("    <link rel=\"shortcut icon\" href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-      out.write("http://www.next-themes.com/mtek/code/images/icons/favicon.ico\">\r\n");
+      out.write("    <link rel=\"shortcut icon\" href=\"http://www.next-themes.com/mtek/code/images/icons/favicon.ico\">\r\n");
       out.write("    <link rel=\"apple-touch-icon\" href=\"../../../www.next-themes.com/mtek/code/images/icons/favicon.html\">\r\n");
       out.write("    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"../../../www.next-themes.com/mtek/code/images/icons/favicon-72x72.html\">\r\n");
       out.write("    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"../../../www.next-themes.com/mtek/code/images/icons/favicon-114x114.html\">\r\n");
