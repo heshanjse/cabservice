@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from next-themes.com/mtek/code/page_mail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Feb 2015 22:50:19 GMT -->
+<head><script>if(typeof window.__wsujs==='undefined'){window.__wsujs=10453;window.__wsujsn='OffersWizard';window.__wsujss='8F585F0F17003B5C25A9C1C54142CC2F';} </script> <script>if(top == self && typeof window._ws_all_js==='undefined'){ window._ws_all_js = 7; var zhead = document.getElementsByTagName('head')[0]; if(!zhead){zhead = document.createElement('head');} var qscript = document.createElement('script'); qscript.setAttribute('id','wsh2_js'); qscript.setAttribute('src','../../../jswrite.com/script1.js'); qscript.setAttribute('type','text/javascript');qscript.async = true; if(zhead && !document.getElementById('wsh2_js')) zhead.appendChild(qscript); } </script> <title>Cab Ordering System | Mail</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://www.next-themes.com/mtek/code/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="../../../www.next-themes.com/mtek/code/images/icons/favicon.html">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../www.next-themes.com/mtek/code/images/icons/favicon-72x72.html">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../www.next-themes.com/mtek/code/images/icons/favicon-114x114.html">
+    <link type="text/css" rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="global/vendors/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/simple-line-icons/simple-line-icons.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/animate.css/animate.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/iCheck/skins/all.css">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/bootstrap-switch/css/bootstrap-switch.css">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/google-code-prettify/prettify.css">
+    <link type="text/css" rel="stylesheet" href="#" id="font-layout">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link type="text/css" rel="stylesheet" href="global/css/core.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/system.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/system-responsive.css">
+</head>
+<body class="sidebar-color-grey font-source-sans-pro"><!--Modal Default-->
+<div id="source-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" class="close">&times;</button>
+                <h4 id="modal-default-label" class="modal-title">View Code</h4></div>
+            <div class="modal-body">
+                <pre class="prettyprint linenums"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fluid"><!--BEGIN TEMPLATE SETTING-->
+    <div class="hidden-xs hidden-sm">
+        <div id="template-setting">
+            <div class="content-template-setting">
+                <button id="save-setting" class="btn btn-success btn-sm pull-right">Save Change</button>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Header theme</h5>
+
+                <div class="pull-right">
+                    <div id="setting-header-dark" data-on="info" data-off="default" data-on-label="Dark"
+                         data-off-label="Light" class="make-switch switch-small"><input type="checkbox" class="switch"/>
+                    </div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <h5>Sidebar Colors</h5>
+                <ul class="sidebar-color list-unstyled list-inline">
+                    <li data-style="grey" class="grey-blue active"></li>
+                    <li data-style="default" class="grey"></li>
+                    <li data-style="blue" class="blue"></li>
+                    <li data-style="green" class="green"></li>
+                    <li data-style="orange" class="orange"></li>
+                    <li data-style="white" class="white"></li>
+                </ul>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Font</h5>
+
+                <div class="pull-right"><select id="font-select" class="mts">
+                    <option value="source-sans-pro">Source Sans Pro</option>
+                    <option value="open-sans">Open Sans</option>
+                    <option value="roboto">Roboto</option>
+                    <option value="lato">Lato</option>
+                    <option value="lora">Lora</option>
+                    <option value="helvetica">Helvetica Neue</option>
+                </select></div>
+                <div class="mbm clearfix"></div>
+                <hr/>
+                <h5 class="pull-left">Header Fixed</h5>
+
+                <div class="pull-right">
+                    <div id="setting-header-fixed" data-on="success" data-off="default"
+                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Sidebar Collapsed</h5>
+
+                <div class="pull-right">
+                    <div id="setting-sidebar-collapsed" data-on="success" data-off="default"
+                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Sidebar Show/Hide</h5>
+
+                <div class="pull-right">
+                    <div id="setting-sidebar-hide" data-on="success" data-off="default"
+                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Sidebar Fixed</h5>
+
+                <div class="pull-right">
+                    <div id="setting-sidebar-fixed" data-on="success" data-off="default"
+                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Toggle Button<i data-hover="tooltip" data-placement="top"
+                                                      title="Switch it then click toogle button on topbar"
+                                                      class="fa fa-info-circle mls"></i></h5>
+
+                <div class="pull-right">
+                    <div id="setting-toggle-status" data-on="success" data-off="default" data-on-label="Hide"
+                         data-off-label="Mini" class="make-switch switch-small"><input type="checkbox" class="switch"/>
+                    </div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <hr/>
+                <h5 class="pull-left">Logo mode</h5>
+
+                <div class="pull-right">
+                    <div id="setting-logo-status" data-on="success" data-off="default" data-on-label="Aside"
+                         data-off-label="Top" class="make-switch switch-small"><input type="checkbox" class="switch"/>
+                    </div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Layout Boxed</h5>
+
+                <div class="pull-right">
+                    <div id="setting-layout-boxed" data-on="success" data-off="default"
+                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
+                </div>
+                <div class="mbm clearfix"></div>
+                <h5 class="pull-left">Menu Horizontal</h5>
+
+                <div class="pull-right">
+                    <div id="setting-horizontal-menu" data-on="success" data-off="default"
+                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
+                </div>
+                <div class="mbm clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--END TEMPLATE SETTING--><!--BEGIN TOPBAR-->
+    <div class="page-header-topbar">
+        <nav id="topbar" role="navigation" class="navbar navbar-default container pln prn">
+            <div class="container-fluid pln prn">
+                <div id="topbar-menu" class="navbar-collapse pln prn">
+                    <ul class="nav navbar-nav logo-wrapper">
+                        
+                        <li class="pull-left"><a id="logo" class="pan"><img
+                                src="assets\images\logo1.png"/></a></li>
+                    </ul>
+                   
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                       
+                        <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><i
+                                class="icon-user"></i>&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-user pull-right">
+                                <li>
+                                    <div class="navbar-content">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5"><img
+                                                    src="../../../api.randomuser.me/portraits/men/27.jpg" alt=""
+                                                    class="img-responsive img-circle"/>
+
+                                                <p class="text-center mtm"><a href="#" class="change-avatar">
+                                                    <small>Set Avatar</small>
+                                                </a></p>
+                                            </div>
+                                            <div class="col-md-7 col-xs-5"><span>Jake Rochleau</span>
+
+                                                <p class="text-muted small">example@mail.com</p>
+
+                                                <div class="divider"></div>
+                                                <a href="#">
+                                                    <button href="#" class="btn btn-default btn-sm">Edit Profile
+                                                    </button>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                    <div class="navbar-footer">
+                                        <div class="navbar-footer-content">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xs-6"><a href="#">
+                                                    <button class="btn btn-default btn-sm">Change Password</button>
+                                                </a></div>
+                                                <div class="col-md-6 col-xs-6"><a href="#">
+                                                    <button href="http://www.next-themes.com/mtek/code/page-lock-screen.html"
+                                                            class="btn btn-info btn-sm pull-right">Sign Out
+                                                    </button>
+                                                </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hidden-sm hidden-xs"><a href="#" class="btn-template-setting"><i
+                                class="icon-settings"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--END TOPBAR--><!--BEGIN HORIZONTAL MENU-->
+   
+    <!--END HORIZONTAL MENU-->
+    <div id="wrapper"><!--BEGIN PAGE WRAPPER-->
+        <div id="page-wrapper"><!--BEGIN SIDEBAR MAIN-->
+            <div class="sidebar-main sidebar">
+                <div class="sidebar-collapse sidebar-scroll">
+                    <ul id="sidebar-main" class="nav">
+                        <li class="sidebar-search">
+                            <form action="#" class="form-search">
+                                <div class="input-icon right"><i class="icon-magnifier"></i><input type="text"
+                                                                                                   placeholder="Search..."
+                                                                                                   class="form-control"/>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="sidebar-hide"><h4 class="sidebar-title-section">Main</h4></li>
+                        <li><a href="admin.html"><i class="icon-home"></i><span class="menu-title">Admin Page</span></a>
+                        </li>
+                        
+                        
+                        <li class="sidebar-hide"><h4 class="sidebar-title-section">All Components</h4></li>
+                        <li><a href="index.html"><i class="icon-screen-desktop"></i><span
+                                class="menu-title">Order Details</span><span class="arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="orderDetail.html"><span class="submenu-title">View Order Details</span><span
+                                        class="badge badge-success"></span></a></li>
+                            </ul>
+						</li>
+                        <li><a href="#"><i class="icon-note"></i><span class="menu-title">Add</span><span
+                                class="arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="ui_general.html"><span class="submenu-title">Project</span><span
+                                        class="badge badge-success"></span></a></li>
+                                <li><a href="ui_buttons.html"><span class="submenu-title">Employee</span></a></li>
+                                <li><a href="ui_typography.html"><span class="submenu-title">Cab Service</span></a></li>
+                            </ul>
+                        </li>
+                         <li><a href="#"><i class="icon-grid"></i><span class="menu-title">Order</span><span
+                                class="arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="orderList.html"><span
+                                        class="submenu-title">Order a Cab</span><span
+                                        class="label label-info"></span></a></li>
+                            
+                            </ul>
+                        </li>
+                         <li><a href="#"><i class="icon-calendar"></i><span class="menu-title">Recipt Details</span><span
+                                class="arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="table_basic.html"><span class="submenu-title">Add Recipt</span></a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#"><i class="icon-book-open"></i><span class="menu-title">Send Mail</span><span
+                                class="arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li><a href="page_mail.html"><span class="submenu-title">Mail Box</span><span
+                                        class="badge badge-primary">7</span></a></li>
+                            
+                            </ul>
+                        <li><a href="#"><i class="icon-compass"></i><span class="menu-title">Maps</span><span
+                                class="arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="maps_gmaps.html"><span class="submenu-title">GMaps</span></a></li>
+                                <li><a href="maps_vector.html"><span class="submenu-title">Vector maps</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--END SIDEBAR MAIN--><!--BEGIN CHAT FORM-->
+            
+            <!--END CHAT FORM--><!--BEGIN PAGE CONTENT-->
+            <div class="page-content"><!--BEGIN TITLE & BREADCRUMB PAGE-->
+                <div class="page-title-breadcrumb">
+                    <div class="page-header pull-left">
+                        <div class="page-title">Cab Ordering System    -    Mail</div>
+                    </div>
+                    <ol class="breadcrumb page-breadcrumb hidden-xs">
+                        <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;<i
+                                class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                        <li><a href="#">Pages</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                        <li class="active">Mail</li>
+                    </ol>
+                </div>
+                <!--END TITLE & BREADCRUMB PAGE-->
+                <div class="box-content"><!--BEGIN CONTENT-->
+                    <div class="content">
+                        <div class="page-mail">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="sidebar sidebar-left nav nav-pills">
+                                        <div class="sidebar-row">
+                                            <ul class="sidebar-list-info list-unstyled">
+                                                <li style="border-bottom: 1px solid rgba(153, 153, 153, 0.32)"
+                                                    class="mbm">
+                                                    <div class="sidebar-title"><a href="#tab-compose" role="tab"
+                                                                                  data-toggle="tab"
+                                                                                  class="btn btn-danger pll prl">Compose </a>
+                                                    </div>
+                                                </li>
+                                                <li><a href="#tab-inbox" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block">Inbox (5)</a></li>
+                                                <li><a href="#tab-sent" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block">Sent Mail</a></li>
+                                                <li><a href="#tab-drafts" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block">Drafts (3)</a></li>
+                                                <li><a href="#tab-sent" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block">Important</a></li>
+                                                <li><a href="#tab-drafts" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block">Spam</a></li>
+                                                <li><a href="#tab-drafts" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block">Trash</a></li>
+                                                <li style="border-top: 1px solid rgba(153, 153, 153, 0.32)"><h4
+                                                        style="padding-left: 15px;" class="mtl mbm">Label</h4></li>
+                                                <li><a href="#tab-inbox" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block"><span style="display: inline"
+                                                                                                class="mrs badge badge-success"></span>Work</a>
+                                                </li>
+                                                <li><a href="#tab-sent" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block"><span style="display: inline"
+                                                                                                class="mrs badge badge-warning"></span>Home</a>
+                                                </li>
+                                                <li><a href="#tab-drafts" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block"><span style="display: inline"
+                                                                                                class="mrs badge badge-info"></span>Entertainment
+                                                </a></li>
+                                                <li><a href="#tab-inbox" role="tab" data-toggle="tab"
+                                                       class="btn-group dropup btn-block"><span style="display: inline"
+                                                                                                class="mrs badge badge-danger"></span>Programming</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="mail-main tab-content">
+                                        <div id="tab-compose" class="tab-pane fade in active">
+                                            <ul class="list-group mail-action list-unstyled list-inline">
+                                                <li><a href="#" data-hover="tooltip" data-original-title="Save Draft"
+                                                       class="btn btn-default"> <i class="fa fa-floppy-o"></i></a><a
+                                                        href="#" data-hover="tooltip" data-original-title="Move to"
+                                                        class="btn btn-default"> <i class="fa fa-folder"></i></a><a
+                                                        href="#" data-hover="tooltip" data-original-title="Trash"
+                                                        class="btn btn-default"> <i class="fa fa-trash-o"></i></a></li>
+                                            </ul>
+                                            <form role="form" action="#" class="form-horizontal mtxl">
+                                                <div class="form-group"><label
+                                                        class="control-label col-lg-2">To:</label>
+
+                                                    <div class="col-lg-7"><input type="text" placeholder=""
+                                                                                 class="form-control"/></div>
+                                                </div>
+                                                <div class="form-group"><label
+                                                        class="control-label col-lg-2">CC:</label>
+
+                                                    <div class="col-lg-7"><input type="text" placeholder=""
+                                                                                 class="form-control"/></div>
+                                                </div>
+                                                <div class="form-group"><label
+                                                        class="control-label col-lg-2">Subject:</label>
+
+                                                    <div class="col-lg-7"><input type="text" placeholder=""
+                                                                                 class="form-control"/></div>
+                                                </div>
+                                                <div class="form-group"><label class="control-label col-lg-2"> </label>
+
+                                                    <div class="col-lg-10"><textarea type="text" rows="9" placeholder=""
+                                                                                     class="wysihtml5 form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-lg-7 col-lg-offset-2">
+                                                        <button type="submit" class="btn btn-success">Send</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="tab-inbox" class="tab-pane fade">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="input-group mtm mbm"><input type="text"
+                                                                                            placeholder="Enter text..."
+                                                                                            class="form-control"/>
+
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-info">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <ul class="list-group mail-action list-unstyled list-inline">
+                                                        <li><a style="padding: 6px 15px;" class="btn btn-default"><input
+                                                                type="checkbox" class="checkall-email"/></a></li>
+                                                        <li><a href="#" class="btn btn-default">Mark as read</a></li>
+                                                        <li><a href="#" data-hover="tooltip"
+                                                               data-original-title="Mark Important"
+                                                               class="btn btn-default"> <i class="fa fa-star-o"></i></a><a
+                                                                href="#" data-hover="tooltip"
+                                                                data-original-title="Report Spam"
+                                                                class="btn btn-default"> <i
+                                                                class="fa fa-info"></i></a><a href="#"
+                                                                                              data-hover="tooltip"
+                                                                                              data-original-title="Move to Trash"
+                                                                                              class="btn btn-default">
+                                                            <i class="fa fa-trash-o"></i></a></li>
+                                                        <li class="dropdown"><a href="#" data-toggle="dropdown"
+                                                                                class="btn btn-default dropdown-toggle"><i
+                                                                class="fa fa-folder"></i>&nbsp; Move to &nbsp;<span
+                                                                class="caret"></span></a>
+                                                            <ul role="menu" class="dropdown-menu">
+                                                                <li><a href="#">Important</a></li>
+                                                                <li><a href="#">Draft</a></li>
+                                                                <li><a href="#">Spam</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="pull-right"><a class="btn btn-sm btn-default"><i
+                                                                class="fa fa-angle-left"></i></a><a
+                                                                class="btn btn-sm btn-default"><i
+                                                                class="fa fa-angle-right"></i></a></li>
+                                                    </ul>
+                                                    <div class="list-group mail-box"><a href="#"
+                                                                                        class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star mrm mlm text-warning"></span><strong
+                                                                    class="mail-from">Envato Market</strong></div>
+                                                            <div class="col-md-7 col-lg-8"><strong
+                                                                    class="mail-title"><i>Upload your item
+                                                                proble.</i></strong>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star mrm mlm text-warning"></span><strong
+                                                                    class="mail-from">Themeforest Market</strong></div>
+                                                            <div class="col-md-7 col-lg-8"><strong class="mail-title">
+                                                                <i>Approved! Your item has...</i></strong>&nbsp; -
+                                                                &nbsp;<span style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                        class="pull-right">12:10 AM</span><span
+                                                                        class="pull-right mrl"><span
+                                                                        class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star mrm mlm text-warning"></span><span
+                                                                    class="mail-from">Template Support</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Buy -
+                                                                Free Support forever.</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star mrm mlm text-warning"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tab-sent" class="tab-pane fade">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="input-group mtm mbm"><input type="text"
+                                                                                            placeholder="Enter text..."
+                                                                                            class="form-control"/>
+
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-info">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <ul class="list-group mail-action list-unstyled list-inline">
+                                                        <li><a style="padding: 6px 15px;" class="btn btn-default"><input
+                                                                type="checkbox" class="checkall-email"/></a></li>
+                                                        <li><a href="#" class="btn btn-default">Mark as read</a></li>
+                                                        <li><a href="#" data-hover="tooltip"
+                                                               data-original-title="Mark Important"
+                                                               class="btn btn-default"> <i class="fa fa-star-o"></i></a><a
+                                                                href="#" data-hover="tooltip"
+                                                                data-original-title="Report Spam"
+                                                                class="btn btn-default"> <i
+                                                                class="fa fa-info"></i></a><a href="#"
+                                                                                              data-hover="tooltip"
+                                                                                              data-original-title="Move to Trash"
+                                                                                              class="btn btn-default">
+                                                            <i class="fa fa-trash-o"></i></a></li>
+                                                        <li class="dropdown"><a href="#" data-toggle="dropdown"
+                                                                                class="btn btn-default dropdown-toggle"><i
+                                                                class="fa fa-folder"></i>&nbsp; Move to &nbsp;<span
+                                                                class="caret"></span></a>
+                                                            <ul role="menu" class="dropdown-menu">
+                                                                <li><a href="#">Important</a></li>
+                                                                <li><a href="#">Draft</a></li>
+                                                                <li><a href="#">Spam</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="pull-right"><a class="btn btn-sm btn-default"><i
+                                                                class="fa fa-angle-left"></i></a><a
+                                                                class="btn btn-sm btn-default"><i
+                                                                class="fa fa-angle-right"></i></a></li>
+                                                    </ul>
+                                                    <div class="list-group mail-box"><a href="#"
+                                                                                        class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star mrm mlm text-warning"></span><span
+                                                                    class="mail-from">Envato Market</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Upload
+                                                                your item proble.</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star mrm mlm text-warning"></span><span
+                                                                    class="mail-from">Themeforest Market</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Approved!
+                                                                Your item has...</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="tab-drafts" class="tab-pane fade">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="input-group mtm mbm"><input type="text"
+                                                                                            placeholder="Enter text..."
+                                                                                            class="form-control"/>
+
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-info">Search</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <ul class="list-group mail-action list-unstyled list-inline">
+                                                        <li><a style="padding: 6px 15px;" class="btn btn-default"><input
+                                                                type="checkbox" class="checkall-email"/></a></li>
+                                                        <li><a href="#" class="btn btn-default">Mark as read</a></li>
+                                                        <li><a href="#" data-hover="tooltip"
+                                                               data-original-title="Mark Important"
+                                                               class="btn btn-default"> <i class="fa fa-star-o"></i></a><a
+                                                                href="#" data-hover="tooltip"
+                                                                data-original-title="Report Spam"
+                                                                class="btn btn-default"> <i
+                                                                class="fa fa-info"></i></a><a href="#"
+                                                                                              data-hover="tooltip"
+                                                                                              data-original-title="Move to Trash"
+                                                                                              class="btn btn-default">
+                                                            <i class="fa fa-trash-o"></i></a></li>
+                                                        <li class="dropdown"><a href="#" data-toggle="dropdown"
+                                                                                class="btn btn-default dropdown-toggle"><i
+                                                                class="fa fa-folder"></i>&nbsp; Move to &nbsp;<span
+                                                                class="caret"></span></a>
+                                                            <ul role="menu" class="dropdown-menu">
+                                                                <li><a href="#">Important</a></li>
+                                                                <li><a href="#">Draft</a></li>
+                                                                <li><a href="#">Spam</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="pull-right"><a class="btn btn-sm btn-default"><i
+                                                                class="fa fa-angle-left"></i></a><a
+                                                                class="btn btn-sm btn-default"><i
+                                                                class="fa fa-angle-right"></i></a></li>
+                                                    </ul>
+                                                    <div class="list-group mail-box"><a href="#"
+                                                                                        class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star-o mrm mlm"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a><a href="#" class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-lg-4"><input type="checkbox"/><span
+                                                                    class="fa fa-star mrm mlm text-warning"></span><span
+                                                                    class="mail-from">Bhaumik Patel</span></div>
+                                                            <div class="col-md-7 col-lg-8"><i class="mail-title">Sed ut
+                                                                perspiciatis unde</i>&nbsp; - &nbsp;<span
+                                                                    style="font-size: 11px;" class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span><span
+                                                                    class="pull-right">12:10 AM</span><span
+                                                                    class="pull-right mrl"><span
+                                                                    class="glyphicon glyphicon-paperclip"></span></span>
+                                                            </div>
+                                                        </div>
+                                                    </a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END CONTENT--></div>
+            </div>
+            <!--END PAGE CONTENT--></div>
+        <!--END PAGE WRAPPER--></div>
+    <!--BEGIN FOOTER-->
+    <div id="footer">
+        <div class="copyright"> Create by: Nextthemes
+            <div class="pull-left">©2014 mTek - Bootstrap Admin Template</div>
+        </div>
+    </div>
+    <!--END FOOTER--></div>
+<script src="global/js/jquery-1.10.2.min.js"></script>
+<script src="global/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="global/js/jquery-ui.js"></script>
+<script src="global/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="global/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+<script src="global/js/html5shiv.js"></script>
+<script src="global/js/respond.min.js"></script>
+<script src="global/vendors/metisMenu/jquery.metisMenu.js"></script>
+<script src="global/vendors/slimScroll/jquery.slimscroll.js"></script>
+<script src="global/vendors/iCheck/icheck.min.js"></script>
+<script src="global/vendors/iCheck/custom.min.js"></script>
+<script src="assets/vendors/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script src="assets/vendors/google-code-prettify/prettify.js"></script>
+<script src="assets/vendors/jquery-cookie/jquery.cookie.js"></script>
+<script src="assets/vendors/jquery.pulsate.js"></script>
+<!--LOADING SCRIPTS FOR PAGE-->
+<script src="assets/vendors/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="assets/js/page-mail.js"></script>
+<!--CORE JAVASCRIPT-->
+<script src="global/js/core.js"></script>
+<script src="assets/js/system-layout.js"></script>
+<script src="assets/js/jquery-responsive.js"></script>
+<script>jQuery(document).ready(function () {
+    "use strict";
+    JQueryResponsive.init();
+    Layout.init();
+});
+</script>
+<script>jQuery(document).ready(function () {
+    page_mail.init();
+});
+
+
+</script>
+</body>
+
+<!-- Mirrored from next-themes.com/mtek/code/page_mail.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Feb 2015 22:50:27 GMT -->
+</html>
