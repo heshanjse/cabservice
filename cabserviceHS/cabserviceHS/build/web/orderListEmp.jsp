@@ -79,7 +79,7 @@
 	color: #585858;
 	margin-left: 5px;
 /*   		right: 0; */
-/*   		bottom: 0; */s
+/*   		bottom: 0; */
 /*   		padding: 20px; */
 /*   		border-top: 1px solid #1C54D1;  */
 /*   		border-bottom: 1px solid white; */
