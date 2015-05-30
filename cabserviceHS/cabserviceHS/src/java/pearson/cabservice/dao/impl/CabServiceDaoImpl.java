@@ -10,8 +10,10 @@ import java.util.List;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import pearson.cabservice.dao.CabServiceDAO;
 import pearson.cabservice.dao.EmployeeDAO;
 import pearson.cabservice.dao.ProjectDAO;
+import pearson.cabservice.model.CabService;
 import pearson.cabservice.model.Employee;
 import pearson.cabservice.model.Project;
 
@@ -20,35 +22,38 @@ import pearson.cabservice.model.Project;
  * @author heshanjayasinghe
  */
 @Repository
-public class CabServiceDaoImpl implements EmployeeDAO{
+public class CabServiceDaoImpl implements CabServiceDAO{
      
     @Autowired
     private SessionFactory sessionFactory;
 
     @Override
-    public void addEmployee(Employee employee) throws ClassNotFoundException, SQLException {
-     this.sessionFactory.getCurrentSession().save(employee);     
+    public void addCabService(CabService cabservice) throws ClassNotFoundException, SQLException {
+        this.sessionFactory.getCurrentSession().save(cabservice);  
     }
 
     @Override
-    public Employee searchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
+    public CabService searchCabService(Integer cabserviceId) throws ClassNotFoundException, SQLException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public int updateEmployee(Employee employee) throws ClassNotFoundException, SQLException {
+    public int UpdateCabService(CabService cabservice) throws ClassNotFoundException, SQLException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void deleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
+    public void deleteCabService(Integer cabserviceId) throws ClassNotFoundException, SQLException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException {
+    public List<CabService> searchCabServiceList() throws ClassNotFoundException, SQLException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    
+
     
     
 }

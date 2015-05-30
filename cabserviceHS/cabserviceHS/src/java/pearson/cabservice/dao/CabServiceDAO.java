@@ -7,6 +7,7 @@ package pearson.cabservice.dao;
 
 import java.sql.SQLException;
 import java.util.List;
+import pearson.cabservice.model.CabService;
 import pearson.cabservice.model.Employee;
 
 
@@ -15,13 +16,13 @@ import pearson.cabservice.model.Employee;
  * @author heshanjayasinghe
  */
 public interface CabServiceDAO {
-     public void AddEmployee(Employee employee) throws ClassNotFoundException, SQLException;
+     public void addCabService(CabService cabservice) throws ClassNotFoundException, SQLException;
 
-    public Employee SearchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
+    public CabService searchCabService(Integer cabserviceId) throws ClassNotFoundException, SQLException;
 
-    public int UpdateEmployee(Employee employee) throws ClassNotFoundException, SQLException;
+    public int UpdateCabService(CabService cabservice) throws ClassNotFoundException, SQLException;
 
-    public void DeleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
+    public void deleteCabService(Integer cabserviceId) throws ClassNotFoundException, SQLException;
 
-    public List<Employee> SearchEmployeeList() throws ClassNotFoundException, SQLException;
+    public List<CabService> searchCabServiceList() throws ClassNotFoundException, SQLException;
 }
