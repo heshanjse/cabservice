@@ -5,10 +5,16 @@
  */
 package pearson.cabservice.model;
 
+import java.util.Date;
+
 /**
  *
  * @author heshanjayasinghe
  */
-public class Order {
-    
+public class CabOrder {
+    int cabOrderid;
+    int requestid;
+    int Acceptedmanagerid;
+    Date time;         
+    int cabtypeid;
 }
