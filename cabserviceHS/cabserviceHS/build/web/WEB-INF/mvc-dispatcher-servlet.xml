@@ -17,6 +17,9 @@
     
     <context:annotation-config />
     <context:component-scan base-package="pearson.cabservice.controller"/>
+   <!-- <context:component-scan base-package="pearson.cabservice.controller" use-default-filters="false">
+    <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+</context:component-scan>-->
 
    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
@@ -72,6 +75,8 @@
     
     <bean id="projectDAO" class="pearson.cabservice.dao.impl.ProjectDaoImpl"></bean>
     <bean id="projectservice" class="pearson.cabservice.service.impl.ProjectServiceImpl"></bean>
+    <bean id="cabserviceDAO" class="pearson.cabservice.dao.impl.CabServiceDaoImpl"></bean>
+    <bean id="cabserviceservice" class="pearson.cabservice.service.impl.CabServiceServiceImpl"></bean>
     <bean id="employeeDAO" class="pearson.cabservice.dao.impl.EmployeeDaoImpl"></bean>
     <bean id="employeeservice" class="pearson.cabservice.service.impl.EmployeeServiceImpl"></bean>
     <tx:annotation-driven />

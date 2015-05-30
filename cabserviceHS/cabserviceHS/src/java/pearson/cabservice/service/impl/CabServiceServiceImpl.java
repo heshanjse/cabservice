@@ -25,7 +25,8 @@ public class CabServiceServiceImpl implements CabServiceService{
 
     @Override
     public void AddCabService(CabService cabservice) throws ClassNotFoundException, SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("service ok");
+        cabserviceDAO.AddCabService(cabservice);
     }
 
     @Override

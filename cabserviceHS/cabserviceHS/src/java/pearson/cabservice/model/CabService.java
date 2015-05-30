@@ -35,9 +35,9 @@ public class CabService implements java.io.Serializable {
     @Column(name="cab_email")
     private String email;
     @Column(name="rate_perkm")
-    private Double rate;
+    private String rate;
     @Column(name="initial_amount")
-    private Double initical_amount;
+    private String initical_amount;
     @Column(name="cab_phone")
     private String mobile;
    
@@ -45,7 +45,7 @@ public class CabService implements java.io.Serializable {
     public CabService() {
     }
 
-    public CabService(Integer id, String name, String email, Double rate, Double initical_amount, String mobile) {
+    public CabService(Integer id, String name, String email, String rate, String initical_amount, String mobile) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -99,28 +99,28 @@ public class CabService implements java.io.Serializable {
     /**
      * @return the rate
      */
-    public Double getRate() {
+    public String getRate() {
         return rate;
     }
 
     /**
      * @param rate the rate to set
      */
-    public void setRate(Double rate) {
+    public void setRate(String rate) {
         this.rate = rate;
     }
 
     /**
      * @return the initical_amount
      */
-    public Double getInitical_amount() {
+    public String getInitical_amount() {
         return initical_amount;
     }
 
     /**
      * @param initical_amount the initical_amount to set
      */
-    public void setInitical_amount(Double initical_amount) {
+    public void setInitical_amount(String initical_amount) {
         this.initical_amount = initical_amount;
     }
 

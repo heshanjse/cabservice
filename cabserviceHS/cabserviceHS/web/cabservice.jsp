@@ -1,4 +1,12 @@
+<%-- 
+    Document   : cabservice
+    Created on : May 30, 2015, 10:14:41 PM
+    Author     : heshanjayasinghe
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -223,14 +231,14 @@
 												<div class="form-group">
                                                     <label class="col-lg-3 control-label">Initial Amount</label>
                                                     <div class="col-lg-5">
-                                                        <input type="text" name="initical_amount" class="form-control"/>
+                                                        <input type="number" step="any" name="initical_amount" class="form-control"/>
                                                     </div>
                                                 </div>
 												
 												<div class="form-group">
                                                     <label class="col-lg-3 control-label">Rate Per km</label>
                                                     <div class="col-lg-5">
-                                                        <input type="text" name="rate" class="form-control"/>
+                                                        <input type="number" step="any" name="rate" class="form-control"/>
                                                     </div>
                                                 </div>
 											 

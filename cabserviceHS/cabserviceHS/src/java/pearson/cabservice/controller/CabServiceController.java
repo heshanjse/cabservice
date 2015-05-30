@@ -6,8 +6,6 @@
 package pearson.cabservice.controller;
 
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -16,11 +14,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import pearson.cabservice.model.CabService;
-import pearson.cabservice.model.Employee;
 import pearson.cabservice.model.Project;
 import pearson.cabservice.service.CabServiceService;
-import pearson.cabservice.service.EmployeeService;
-import pearson.cabservice.service.ProjectService;
+
 
 /**
  *
@@ -45,7 +41,7 @@ public class CabServiceController {
     @RequestMapping(value = "/cabservice/add",method = RequestMethod.POST)
     public String getProject(@ModelAttribute(value="cabservice") CabService cabservice, BindingResult result) {
         try {
-     
+            System.out.println("controller ok");
             cabserviceservice.AddCabService(cabservice);
 		return "redirect:/index.jsp";
 

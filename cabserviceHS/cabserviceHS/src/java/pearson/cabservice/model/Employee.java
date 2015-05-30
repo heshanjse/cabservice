@@ -6,17 +6,12 @@
 package pearson.cabservice.model;
 
 
-import java.util.HashSet;
+
 import java.util.Set;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
@@ -50,12 +45,12 @@ public class Employee implements java.io.Serializable {
     private String mobile;
     @Column(name="e_location")
     private String location;
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinTable(name = "project_has_employee", catalog = "cabservices", joinColumns = { 
-			@JoinColumn(name = "idemployee", nullable = false, updatable = false) }, 
-			inverseJoinColumns = { @JoinColumn(name = "idproject", 
-					nullable = false, updatable = false) })
-    private Set<Project> projects = new HashSet<Project>(0);
+//    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//	@JoinTable(name = "project_has_employee", catalog = "cabservices", joinColumns = { 
+//			@JoinColumn(name = "idemployee", nullable = false, updatable = false) }, 
+//			inverseJoinColumns = { @JoinColumn(name = "idproject", 
+//					nullable = false, updatable = false) })
+//    private Set<Project> projects = new HashSet<Project>(0);
 
     public Employee() {
     }
@@ -78,7 +73,7 @@ public class Employee implements java.io.Serializable {
         this.usertype = usertype;
         this.mobile = mobile;
         this.location = location;
-        this.projects = projects;
+      //this.projects = projects;
     }
 
     /**
@@ -179,18 +174,18 @@ public class Employee implements java.io.Serializable {
         this.location = location;
     }
 
-    /**
-     * @return the projects
-     */
-    public Set<Project> getProjects() {
-        return projects;
-    }
-
-    /**
-     * @param projects the projects to set
-     */
-    public void setProjects(Set<Project> projects) {
-        this.projects = projects;
-    }
+//    /**
+//     * @return the projects
+//     */
+//    public Set<Project> getProjects() {
+//        return projects;
+//    }
+//
+//    /**
+//     * @param projects the projects to set
+//     */
+//    public void setProjects(Set<Project> projects) {
+//        this.projects = projects;
+//    }
 
 }

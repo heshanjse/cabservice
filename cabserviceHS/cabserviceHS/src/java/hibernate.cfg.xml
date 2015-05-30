@@ -7,5 +7,6 @@
     <session-factory>
         <mapping class="pearson.cabservice.model.Project" />
         <mapping class="pearson.cabservice.model.Employee" />
+        <mapping class="pearson.cabservice.model.CabService" />
     </session-factory>
 </hibernate-configuration>

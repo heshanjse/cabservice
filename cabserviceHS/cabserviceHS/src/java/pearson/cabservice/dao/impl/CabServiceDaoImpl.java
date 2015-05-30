@@ -10,12 +10,10 @@ import java.util.List;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import pearson.cabservice.dao.CabServiceDAO;
-import pearson.cabservice.dao.EmployeeDAO;
-import pearson.cabservice.dao.ProjectDAO;
 import pearson.cabservice.model.CabService;
-import pearson.cabservice.model.Employee;
-import pearson.cabservice.model.Project;
+
 
 /**
  *
@@ -28,8 +26,11 @@ public class CabServiceDaoImpl implements CabServiceDAO{
     private SessionFactory sessionFactory;
 
     @Override
+    @Transactional
     public void AddCabService(CabService cabservice) throws ClassNotFoundException, SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("dao ok");
+    this.sessionFactory.getCurrentSession().save(cabservice);      
+        System.out.println("hibernate ok");
     }
 
     @Override
