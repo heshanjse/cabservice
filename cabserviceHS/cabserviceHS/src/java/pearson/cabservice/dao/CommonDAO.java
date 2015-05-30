@@ -27,124 +27,124 @@ public class CommonDAO {
 
     
 //add object to DB
- public static void insertObject(Object object){
-    
-          SessionFactory factory=HibernateUtil.getSessionFactory();
-          Session session=factory.openSession();
-          Transaction transaction=null;
-          
-     try {      
-      transaction=session.beginTransaction();
-      session.save(object);   
-      transaction.commit();
-        } 
-     catch (HibernateException e) {
-            transaction.rollback();
-        }
-     finally{
-     session.close();
-     }    
- }
-//add object to DB     
- 
- 
- 
- //select all according to query
-  public static List<Object> getAllOrderItems(String query){
- 
-      List<Object> objectList = null;
-     
-     List<Object> objectitems=null;
-     SessionFactory factory=HibernateUtil.getSessionFactory();
-     Session session=factory.openSession();
-     Transaction transaction=null;
-     try {      
-      transaction=session.beginTransaction();
-      String hql=query;
-      
-      objectitems= session.createQuery(hql).list();  
-      transaction.commit();
-        } 
-     catch (HibernateException e) {
-            transaction.rollback();
-        }
-     finally{
-     session.close();
-     }  
-  //objectList = FXCollections.observableList(objectitems); 
-  //System.out.println(objectList);
-  return objectList;   
-  } 
- //select all according to query  
-    
-  
-  
-//update any object
- public static void updateObject(Object object){
-  SessionFactory factory=HibernateUtil.getSessionFactory();
-          Session session=factory.openSession();
-          Transaction transaction=null;
-     try {      
-      transaction=session.beginTransaction();
-      session.update(object);   
-      transaction.commit();
-        } 
-     
-     catch (HibernateException e) {
-            transaction.rollback();
-        }
-     finally{
-     session.close();
-     
-     }
- 
- }  
- 
- 
- //delete any object
- public static void deleteObject(Object object){
-  SessionFactory factory=HibernateUtil.getSessionFactory();
-          Session session=factory.openSession();
-          Transaction transaction=null;
-     try {      
-      transaction=session.beginTransaction();
-      session.delete(object);   
-      transaction.commit();
-        } 
-     
-     catch (HibernateException e) {
-            transaction.rollback();
-        }
-     finally{
-     session.close();
-     
-     }
- 
- }  
-  
- 
- //delete all object
- public static void deleteAllObject(String date){
-  SessionFactory factory=HibernateUtil.getSessionFactory();
-          Session session=factory.openSession();
-          Transaction transaction=null;
-     try {      
-      transaction=session.beginTransaction();
-      Query q = session.createQuery("delete Dailycollection where date = '"+date+"'");
-      q.executeUpdate();   
-      transaction.commit();
-        } 
-     
-     catch (HibernateException e) {
-            transaction.rollback();
-        }
-     finally{
-     session.close();
-     
-     }
- 
- } 
- 
+// public static void insertObject(Object object){
+//    
+//          SessionFactory factory=HibernateUtil.getSessionFactory();
+//          Session session=factory.openSession();
+//          Transaction transaction=null;
+//          
+//     try {      
+//      transaction=session.beginTransaction();
+//      session.save(object);   
+//      transaction.commit();
+//        } 
+//     catch (HibernateException e) {
+//            transaction.rollback();
+//        }
+//     finally{
+//     session.close();
+//     }    
+// }
+////add object to DB     
+// 
+// 
+// 
+// //select all according to query
+//  public static List<Object> getAllOrderItems(String query){
+// 
+//      List<Object> objectList = null;
+//     
+//     List<Object> objectitems=null;
+//     SessionFactory factory=HibernateUtil.getSessionFactory();
+//     Session session=factory.openSession();
+//     Transaction transaction=null;
+//     try {      
+//      transaction=session.beginTransaction();
+//      String hql=query;
+//      
+//      objectitems= session.createQuery(hql).list();  
+//      transaction.commit();
+//        } 
+//     catch (HibernateException e) {
+//            transaction.rollback();
+//        }
+//     finally{
+//     session.close();
+//     }  
+//  //objectList = FXCollections.observableList(objectitems); 
+//  //System.out.println(objectList);
+//  return objectList;   
+//  } 
+// //select all according to query  
+//    
+//  
+//  
+////update any object
+// public static void updateObject(Object object){
+//  SessionFactory factory=HibernateUtil.getSessionFactory();
+//          Session session=factory.openSession();
+//          Transaction transaction=null;
+//     try {      
+//      transaction=session.beginTransaction();
+//      session.update(object);   
+//      transaction.commit();
+//        } 
+//     
+//     catch (HibernateException e) {
+//            transaction.rollback();
+//        }
+//     finally{
+//     session.close();
+//     
+//     }
+// 
+// }  
+// 
+// 
+// //delete any object
+// public static void deleteObject(Object object){
+//  SessionFactory factory=HibernateUtil.getSessionFactory();
+//          Session session=factory.openSession();
+//          Transaction transaction=null;
+//     try {      
+//      transaction=session.beginTransaction();
+//      session.delete(object);   
+//      transaction.commit();
+//        } 
+//     
+//     catch (HibernateException e) {
+//            transaction.rollback();
+//        }
+//     finally{
+//     session.close();
+//     
+//     }
+// 
+// }  
+//  
+// 
+// //delete all object
+// public static void deleteAllObject(String date){
+//  SessionFactory factory=HibernateUtil.getSessionFactory();
+//          Session session=factory.openSession();
+//          Transaction transaction=null;
+//     try {      
+//      transaction=session.beginTransaction();
+//      Query q = session.createQuery("delete Dailycollection where date = '"+date+"'");
+//      q.executeUpdate();   
+//      transaction.commit();
+//        } 
+//     
+//     catch (HibernateException e) {
+//            transaction.rollback();
+//        }
+//     finally{
+//     session.close();
+//     
+//     }
+// 
+// } 
+// 
  
 }
 

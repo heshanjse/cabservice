@@ -15,10 +15,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import pearson.cabservice.model.CabService;
 import pearson.cabservice.model.Employee;
 import pearson.cabservice.model.Project;
-import pearson.cabservice.service.CabServiceService;
 import pearson.cabservice.service.EmployeeService;
 import pearson.cabservice.service.ProjectService;
 
@@ -30,7 +28,7 @@ import pearson.cabservice.service.ProjectService;
 public class CabServiceController {
     
      @Autowired
-     private CabServiceService cabserviceservice;
+        private EmployeeService employeeservice;
 	
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -43,9 +41,9 @@ public class CabServiceController {
 	}
         
     @RequestMapping(value = "/cabservice/add",method = RequestMethod.POST)
-    public String addCabService(@ModelAttribute(value="cabservice") CabService cabservice, BindingResult result) {
+    public String getProject(@ModelAttribute(value="employee") Employee employee, BindingResult result) {
         try {
-            cabserviceservice.addCabService(cabservice);
+            employeeservice.addEmployee(employee);
                
 		return "redirect:/index.jsp";
 

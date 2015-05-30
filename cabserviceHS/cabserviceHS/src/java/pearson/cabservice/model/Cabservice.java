@@ -24,7 +24,7 @@ import javax.persistence.UniqueConstraint;
     @UniqueConstraint(columnNames = "rate_perkm"),
     @UniqueConstraint(columnNames = "initial_amount"),
     @UniqueConstraint(columnNames = "cab_phone")})
-public class CabService implements java.io.Serializable {
+public class Cabservice implements java.io.Serializable {
     
     @Id
     @Column(name="idCabService")
@@ -42,10 +42,10 @@ public class CabService implements java.io.Serializable {
     private String mobile;
    
     
-    public CabService() {
+    public Cabservice() {
     }
 
-    public CabService(Integer id, String name, String email, Double rate, Double initical_amount, String mobile) {
+    public Cabservice(Integer id, String name, String email, Double rate, Double initical_amount, String mobile) {
         this.id = id;
         this.name = name;
         this.email = email;
