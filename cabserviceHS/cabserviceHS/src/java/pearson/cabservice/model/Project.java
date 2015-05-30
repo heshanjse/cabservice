@@ -28,40 +28,32 @@ public class Project {
     @GeneratedValue
     private Integer Id;
     
+    @Column(name="P_name")
+    private String ProjectName;
     
+    @Column(name="P_description")
+    private String ProjectDescription;
+
     @Column(name="P_manager")
     private Integer manager;
     
-    @Column(name="P_name")
-    private String ProjectName;
-   // @ManyToMany(fetch = FetchType.LAZY, mappedBy = "projects")
-  //  private Set<Employee> employee = new HashSet<Employee>(0);
+    
+    
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "projects")
+    private Set<Employee> employee = new HashSet<Employee>(0);
 
     public Project() {
     }
 
-    public Project(String ProjectName) {
-        this.ProjectName = ProjectName;
-    }
-
-    public Project(Integer manager, String ProjectName) {
-        this.manager = manager;
-        this.ProjectName = ProjectName;
-    }
-
-    public Project(Integer Id, Integer manager, String ProjectName) {
+    public Project(Integer Id, String ProjectName, String ProjectDescription, Integer manager) {
         this.Id = Id;
-        
-        this.manager = manager;
         this.ProjectName = ProjectName;
+        this.ProjectDescription = ProjectDescription;
+        this.manager = manager;
     }
-//    public Project(Integer Id, Integer state, Integer manager, String ProjectName,Set<Employee> employee) {
-//        this.Id = Id;
-//        this.state = state;
-//        this.manager = manager;
-//        this.ProjectName = ProjectName;
-//        this.employee=employee;
-//    }
+
+    
+    
     
     /**
      * @return the Id
@@ -106,21 +98,35 @@ public class Project {
         this.ProjectName = ProjectName;
     }
 
-//    /**
-//     * @return the employee
-//     */
-//    public Set<Employee> getEmployee() {
-//        return employee;
-//    }
-//
-//    /**
-//     * @param employee the employee to set
-//     */
-//    public void setEmployee(Set<Employee> employee) {
-//        this.employee = employee;
-//    }
+    /**
+     * @return the employee
+     */
+    public Set<Employee> getEmployee() {
+        return employee;
+    }
 
+    /**
+     * @param employee the employee to set
+     */
+    public void setEmployee(Set<Employee> employee) {
+        this.employee = employee;
+    }
 
+    /**
+     * @return the ProjectDescription
+     */
+    public String getProjectDescription() {
+        return ProjectDescription;
+    }
+
+    /**
+     * @param ProjectDescription the ProjectDescription to set
+     */
+    public void setProjectDescription(String ProjectDescription) {
+        this.ProjectDescription = ProjectDescription;
+    }
+
+    
    
     
 }
