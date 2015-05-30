@@ -15,8 +15,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import pearson.cabservice.model.CabService;
 import pearson.cabservice.model.Employee;
 import pearson.cabservice.model.Project;
+import pearson.cabservice.service.CabServiceService;
 import pearson.cabservice.service.EmployeeService;
 import pearson.cabservice.service.ProjectService;
 
@@ -28,7 +30,7 @@ import pearson.cabservice.service.ProjectService;
 public class CabServiceController {
     
      @Autowired
-        private EmployeeService employeeservice;
+        private CabServiceService cabserviceservice;
 	
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
@@ -41,10 +43,10 @@ public class CabServiceController {
 	}
         
     @RequestMapping(value = "/cabservice/add",method = RequestMethod.POST)
-    public String getProject(@ModelAttribute(value="employee") Employee employee, BindingResult result) {
+    public String getProject(@ModelAttribute(value="cabservice") CabService cabservice, BindingResult result) {
         try {
-            employeeservice.addEmployee(employee);
-               
+     
+            cabserviceservice.AddCabService(cabservice);
 		return "redirect:/index.jsp";
 
         } catch (ClassNotFoundException ex) {
@@ -53,7 +55,7 @@ public class CabServiceController {
             
         }
        // model.addAttribute("book", book);
-        return "project";
+        return "addcabservice";
     }
     
 }
