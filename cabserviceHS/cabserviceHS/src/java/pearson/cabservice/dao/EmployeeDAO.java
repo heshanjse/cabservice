@@ -9,19 +9,23 @@ import java.sql.SQLException;
 import java.util.List;
 import pearson.cabservice.model.Employee;
 
-
 /**
  *
  * @author heshanjayasinghe
  */
 public interface EmployeeDAO {
-     public void addEmployee(Employee employee) throws ClassNotFoundException, SQLException;
 
-    public Employee searchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
+    public void AddEmployee(Employee employee) throws ClassNotFoundException, SQLException;
+    
+    public Employee SearchEmployee(String username, String password) throws ClassNotFoundException, SQLException;
 
-    public int updateEmployee(Employee employee) throws ClassNotFoundException, SQLException;
+ //   public Employee SearchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
 
-    public void deleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
+//    public int UpdateEmployee(Employee employee) throws ClassNotFoundException, SQLException;
+//
+//    public void DeleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
+//
+//    public List<Employee> SearchEmployeeList() throws ClassNotFoundException, SQLException;
 
-    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException;
+    
 }

@@ -24,20 +24,29 @@ import javax.persistence.Table;
 public class Project {
     
     @Id
-    @Column(name="p_id")
+    @Column(name="idproject")
     @GeneratedValue
     private Integer Id;
     
     @Column(name="P_name")
     private String ProjectName;
+
+    public Project(Integer Id, String ProjectName, Integer manager, Integer state) {
+        this.Id = Id;
+        this.ProjectName = ProjectName;
+        this.manager = manager;
+        this.state = state;
+    }
     
-    @Column(name="P_description")
-    private String ProjectDescription;
+//    @Column(name="P_description")
+//    private String ProjectDescription;
 
     @Column(name="P_manager")
     private Integer manager;
     
     
+    @Column(name="p_state")
+    private Integer state=1;
     
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "projects")
     private Set<Employee> employee = new HashSet<Employee>(0);
@@ -45,15 +54,6 @@ public class Project {
     public Project() {
     }
 
-    public Project(Integer Id, String ProjectName, String ProjectDescription, Integer manager) {
-        this.Id = Id;
-        this.ProjectName = ProjectName;
-        this.ProjectDescription = ProjectDescription;
-        this.manager = manager;
-    }
-
-    
-    
     
     /**
      * @return the Id
@@ -113,20 +113,34 @@ public class Project {
     }
 
     /**
-     * @return the ProjectDescription
+     * @return the state
      */
-    public String getProjectDescription() {
-        return ProjectDescription;
+    public Integer getState() {
+        return 1;
     }
 
     /**
-     * @param ProjectDescription the ProjectDescription to set
+     * @param state the state to set
      */
+    public void setState(Integer state) {
+        this.state = 1;
+    }
+
+    /**
+     * @return the ProjectDescription
+    
+    public String getProjectDescription() {
+        return ProjectDescription;
+    }
+ */
+    /**
+     * @param ProjectDescription the ProjectDescription to set
+     
     public void setProjectDescription(String ProjectDescription) {
         this.ProjectDescription = ProjectDescription;
     }
 
-    
+    */
    
     
 }

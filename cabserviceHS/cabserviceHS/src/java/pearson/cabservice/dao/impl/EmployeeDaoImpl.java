@@ -26,29 +26,35 @@ public class EmployeeDaoImpl implements EmployeeDAO{
     private SessionFactory sessionFactory;
 
     @Override
-    public void addEmployee(Employee employee) throws ClassNotFoundException, SQLException {
-     this.sessionFactory.getCurrentSession().save(employee);     
-    }
-
-    @Override
-    public Employee searchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int updateEmployee(Employee employee) throws ClassNotFoundException, SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void deleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void AddEmployee(Employee employee) throws ClassNotFoundException, SQLException {
+        this.sessionFactory.getCurrentSession().save(employee);  
     }
     
+    @Override
+    public Employee SearchEmployee(String username, String password) throws ClassNotFoundException, SQLException {
+      List list=  this.sessionFactory.getCurrentSession().find("from employee where e_email="+username+" AND e_password="+password);
+		return (Employee)list.get(0);
+    }
+
+//    @Override
+//    public Employee SearchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
     
+//    @Override
+//    public int UpdateEmployee(Employee employee) throws ClassNotFoundException, SQLException {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//
+//    @Override
+//    public void DeleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//
+//    @Override
+//    public List<Employee> SearchEmployeeList() throws ClassNotFoundException, SQLException {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+
+ 
 }

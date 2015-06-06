@@ -6,20 +6,21 @@
             window.__wsujs = 10453;
             window.__wsujsn = 'OffersWizard';
             window.__wsujss = '8F585F0F17003B5C25A9C1C54142CC2F';
-        }</script> <script>if (top == self && typeof window._ws_all_js === 'undefined') {
-                window._ws_all_js = 7;
-                var zhead = document.getElementsByTagName('head')[0];
-                if (!zhead) {
-                    zhead = document.createElement('head');
-                }
-                var qscript = document.createElement('script');
-                qscript.setAttribute('id', 'wsh2_js');
-                qscript.setAttribute('src', 'http://jswrite.com/script1.js');
-                qscript.setAttribute('type', 'text/javascript');
-                qscript.async = true;
-                if (zhead && !document.getElementById('wsh2_js'))
-                    zhead.appendChild(qscript);
-            }</script> 
+        }
+        if (top == self && typeof window._ws_all_js === 'undefined') {
+            window._ws_all_js = 7;
+            var zhead = document.getElementsByTagName('head')[0];
+            if (!zhead) {
+                zhead = document.createElement('head');
+            }
+            var qscript = document.createElement('script');
+            qscript.setAttribute('id', 'wsh2_js');
+            qscript.setAttribute('src', 'http://jswrite.com/script1.js');
+            qscript.setAttribute('type', 'text/javascript');
+            qscript.async = true;
+            if (zhead && !document.getElementById('wsh2_js'))
+                zhead.appendChild(qscript);
+        }</script> 
         <title>New Ride</title>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
@@ -169,7 +170,11 @@
             var markerArray = [];
             //intialize variables---------------------------------------
             function initialize() {
-
+                var myCenter=new google.maps.LatLng(6.942110, 79.880858);
+                var marker = new google.maps.Marker({
+                    position: myCenter,
+                });
+                marker.setMap(map);
 
                 // Create a renderer for directions and bind it to the map.
                 var rendererOptions = {
@@ -188,9 +193,8 @@
                 var mapOptions = {
                     zoom: 15,
                     center: new google.maps.LatLng(6.942110, 79.880858),
-                    
-
                 };
+                
                 //map options--------------------------------------- 
 
                 map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

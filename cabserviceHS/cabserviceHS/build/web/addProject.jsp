@@ -13,8 +13,7 @@
     <link rel="apple-touch-icon" href="../../../www.next-themes.com/mtek/code/images/icons/favicon.html">
     <link rel="apple-touch-icon" sizes="72x72" href="../../../www.next-themes.com/mtek/code/images/icons/favicon-72x72.html">
     <link rel="apple-touch-icon" sizes="114x114" href="../../../www.next-themes.com/mtek/code/images/icons/favicon-114x114.html">
-    <link type="text/css" rel="stylesheet"
-         href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/global/vendors/font-awesome/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/global/vendors/simple-line-icons/simple-line-icons.css">
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/global/vendors/bootstrap/css/bootstrap.min.css">

@@ -17,9 +17,6 @@
     
     <context:annotation-config />
     <context:component-scan base-package="pearson.cabservice.controller"/>
-   <!-- <context:component-scan base-package="pearson.cabservice.controller" use-default-filters="false">
-    <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-</context:component-scan>-->
 
    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
@@ -29,15 +26,7 @@
             <value>.jsp</value>
         </property>
     </bean>
-   <!--  
-    <bean id="jspViewResolver"
-        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="viewClass"
-            value="org.springframework.web.servlet.view.JstlView" />
-        <property name="prefix" value="/WEB-INF/pages/" />
-        <property name="suffix" value=".jsp" />
-    </bean>-->
-    
+
     <bean id="messageSource"
         class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
         <property name="basename" value="classpath:messages" />

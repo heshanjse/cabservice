@@ -11,11 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pearson.cabservice.dao.EmployeeDAO;
-import pearson.cabservice.dao.ProjectDAO;
 import pearson.cabservice.model.Employee;
-import pearson.cabservice.model.Project;
 import pearson.cabservice.service.EmployeeService;
-import pearson.cabservice.service.ProjectService;
 
 /**
  *
@@ -30,31 +27,12 @@ public class EmployeeServiceImpl implements EmployeeService{
     @Override
     @Transactional
     public void addEmployee(Employee employee) throws ClassNotFoundException, SQLException {
-       employeeDAO.addEmployee(employee);
+       employeeDAO.AddEmployee(employee);
     }
 
     @Override
-    @Transactional
-    public Employee searchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
-    return employeeDAO.searchEmployee(employeeId);
-    }
-
-    @Override
-    @Transactional
-    public int updateEmployee(Employee employee) throws ClassNotFoundException, SQLException {
-        return employeeDAO.updateEmployee(employee);
-    }
-
-    @Override
-    @Transactional
-    public void deleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    @Transactional
-    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException {
-        return employeeDAO.searchEmployeeList();
+    public Employee LoginEmployee(String username, String password) throws ClassNotFoundException, SQLException {
+       return employeeDAO.SearchEmployee(username, password);
     }
     
     

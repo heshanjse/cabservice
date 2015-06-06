@@ -56,8 +56,7 @@ public final class addProject_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <link rel=\"apple-touch-icon\" href=\"../../../www.next-themes.com/mtek/code/images/icons/favicon.html\">\r\n");
       out.write("    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"../../../www.next-themes.com/mtek/code/images/icons/favicon-72x72.html\">\r\n");
       out.write("    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"../../../www.next-themes.com/mtek/code/images/icons/favicon-114x114.html\">\r\n");
-      out.write("    <link type=\"text/css\" rel=\"stylesheet\"\r\n");
-      out.write("         href=\"http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700\">\r\n");
+      out.write("    <link type=\"text/css\" rel=\"stylesheet\" href=\"http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700\">\r\n");
       out.write("    <link type=\"text/css\" rel=\"stylesheet\" href=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("/global/vendors/font-awesome/css/font-awesome.min.css\">\r\n");

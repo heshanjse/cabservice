@@ -16,12 +16,16 @@ import pearson.cabservice.model.Employee;
  */
 public interface EmployeeService {
     public void addEmployee(Employee employee) throws ClassNotFoundException, SQLException;
+    
+    public Employee LoginEmployee(String username,String password) throws ClassNotFoundException, SQLException;
 
-    public Employee searchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
-
-    public int updateEmployee(Employee employee) throws ClassNotFoundException, SQLException;
-
-    public void deleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
-
-    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException;
+//    public Employee searchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
+//
+//    public int updateEmployee(Employee employee) throws ClassNotFoundException, SQLException;
+//
+//    public void deleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
+//
+//    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException;
+    
+    
 }
