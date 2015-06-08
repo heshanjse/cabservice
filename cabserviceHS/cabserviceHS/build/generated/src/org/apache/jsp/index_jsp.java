@@ -30,7 +30,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html;charset=UTF-8");
+      response.setContentType("text/html; charset=ISO-8859-1");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -44,15 +44,22 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("<!DOCTYPE html>\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n");
       out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <h1>Hello World!</h1>\n");
-      out.write("    </body>\n");
+      out.write("<head>\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\n");
+      out.write("<title>Hobby result page</title>\n");
+      out.write("</head>\n");
+      out.write("<body>\n");
+      out.write("<h1>Hobby result page</h1>\n");
+      out.write("Is any hobby? - ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${employee.getemail}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write(" <br/>\n");
+      out.write("<a href=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("/\">Main page</a>\n");
+      out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

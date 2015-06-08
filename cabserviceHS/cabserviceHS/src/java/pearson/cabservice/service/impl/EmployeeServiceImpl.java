@@ -35,5 +35,9 @@ public class EmployeeServiceImpl implements EmployeeService{
        return employeeDAO.SearchEmployee(username, password);
     }
     
-    
+
+    @Override
+    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException {
+        return employeeDAO.SearchEmployeeList(); //To change body of generated methods, choose Tools | Templates.
+    }
 }

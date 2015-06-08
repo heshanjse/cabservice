@@ -30,7 +30,7 @@ public final class signin_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -41,6 +41,12 @@ public final class signin_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html lang=\"en\">\n");
       out.write("\n");
@@ -78,7 +84,7 @@ public final class signin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(" </div>\n");
       out.write("\n");
       out.write("<div class=\"page-form\">\n");
-      out.write("    <form action=\"http://next-themes.com/mtek/code/index.html\" class=\"form\">\n");
+      out.write("    <form action=\"./employee/login\" method=\"POST\" class=\"form\">\n");
       out.write("\t\t<div class=\"header-content text-center\"><h1>Cab Ordering System</h1></div>\n");
       out.write("        <div class=\"header-content text-center\"><h1><p class=\"text-muted\">Login</p></h1></div>\n");
       out.write("        <div class=\"body-content\">\n");
@@ -88,8 +94,8 @@ public final class signin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\n");
       out.write("\t\t\t\n");
       out.write("            <div class=\"list-group\">\n");
-      out.write("                <div class=\"list-group-item\"><input type=\"text\" placeholder=\"Username\" class=\"form-control\"></div>\n");
-      out.write("                <div class=\"list-group-item\"><input type=\"password\" placeholder=\"Password\" class=\"form-control\"></div>\n");
+      out.write("                <div class=\"list-group-item\"><input type=\"text\" placeholder=\"Username\"  name=\"username\" class=\"form-control\"></div>\n");
+      out.write("                <div class=\"list-group-item\"><input type=\"password\" placeholder=\"Password\" name=\"password\" class=\"form-control\"></div>\n");
       out.write("            </div>\n");
       out.write("          \n");
       out.write("            <div class=\"clearfix\"></div>\n");

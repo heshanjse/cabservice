@@ -25,7 +25,7 @@ public interface EmployeeService {
 //
 //    public void deleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
 //
-//    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException;
+    public List<Employee> searchEmployeeList() throws ClassNotFoundException, SQLException;
     
     
 }

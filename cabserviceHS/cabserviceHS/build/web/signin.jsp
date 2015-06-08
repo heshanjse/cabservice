@@ -3,6 +3,7 @@
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib prefix="userdata" uri="http://java.sun.com/jstl/core_rt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +41,7 @@
  </div>
 
 <div class="page-form">
-    <form action="http://next-themes.com/mtek/code/index.html" class="form">
+    <form action="./employee/login" method="POST" class="form">
 		<div class="header-content text-center"><h1>Cab Ordering System</h1></div>
         <div class="header-content text-center"><h1><p class="text-muted">Login</p></h1></div>
         <div class="body-content">
@@ -50,8 +51,8 @@
             </div>
 			
             <div class="list-group">
-                <div class="list-group-item"><input type="text" placeholder="Username" class="form-control"></div>
-                <div class="list-group-item"><input type="password" placeholder="Password" class="form-control"></div>
+                <div class="list-group-item"><input type="text" placeholder="Username"  name="username" class="form-control"></div>
+                <div class="list-group-item"><input type="password" placeholder="Password" name="password" class="form-control"></div>
             </div>
           
             <div class="clearfix"></div>

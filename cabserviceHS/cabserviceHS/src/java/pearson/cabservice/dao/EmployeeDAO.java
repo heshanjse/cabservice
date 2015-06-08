@@ -16,16 +16,14 @@ import pearson.cabservice.model.Employee;
 public interface EmployeeDAO {
 
     public void AddEmployee(Employee employee) throws ClassNotFoundException, SQLException;
-    
+
     public Employee SearchEmployee(String username, String password) throws ClassNotFoundException, SQLException;
 
  //   public Employee SearchEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
-
 //    public int UpdateEmployee(Employee employee) throws ClassNotFoundException, SQLException;
 //
 //    public void DeleteEmployee(Integer employeeId) throws ClassNotFoundException, SQLException;
 //
-//    public List<Employee> SearchEmployeeList() throws ClassNotFoundException, SQLException;
+    public List<Employee> SearchEmployeeList() throws ClassNotFoundException, SQLException;
 
-    
 }
